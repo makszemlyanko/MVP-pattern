@@ -18,7 +18,10 @@ class DetailViewController: UIViewController {
         presenter.setComment()
     }
 
-
+    @IBAction func popButton(_ sender: Any) {
+        presenter.tap()
+    }
+    
 
 }
 

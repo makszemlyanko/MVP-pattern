@@ -23,6 +23,8 @@
 		15DC54062907E95B005A6ABB /* DetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DC54052907E95B005A6ABB /* DetailPresenter.swift */; };
 		15DC54102907EC64005A6ABB /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DC540E2907EC64005A6ABB /* DetailViewController.swift */; };
 		15DC54112907EC64005A6ABB /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15DC540F2907EC64005A6ABB /* DetailViewController.xib */; };
+		15DC541E2907F4E6005A6ABB /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DC541D2907F4E6005A6ABB /* Router.swift */; };
+		15DC542429083B38005A6ABB /* RouterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DC542329083B38005A6ABB /* RouterTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +58,8 @@
 		15DC54052907E95B005A6ABB /* DetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPresenter.swift; sourceTree = "<group>"; };
 		15DC540E2907EC64005A6ABB /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		15DC540F2907EC64005A6ABB /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
+		15DC541D2907F4E6005A6ABB /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		15DC542329083B38005A6ABB /* RouterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,14 +102,12 @@
 			isa = PBXGroup;
 			children = (
 				15DC54032907E945005A6ABB /* Modules */,
-				15DC53D72907C18E005A6ABB /* Builder.swift */,
+				15DC54172907F42C005A6ABB /* Builder */,
 				15DC53CC2907BFF1005A6ABB /* Application */,
 				15DC53FE2907D330005A6ABB /* Services */,
 				15DC53CE2907C000005A6ABB /* Model */,
-				15DC53B42907B082005A6ABB /* Main.storyboard */,
-				15DC53B72907B085005A6ABB /* Assets.xcassets */,
-				15DC53B92907B085005A6ABB /* LaunchScreen.storyboard */,
-				15DC53BC2907B085005A6ABB /* Info.plist */,
+				15DC54182907F43B005A6ABB /* SupportingFiles */,
+				15DC541D2907F4E6005A6ABB /* Router.swift */,
 			);
 			path = "MVP-pattern";
 			sourceTree = "<group>";
@@ -167,6 +169,7 @@
 			isa = PBXGroup;
 			children = (
 				15DC53EF2907C8E3005A6ABB /* MainPresentertest.swift */,
+				15DC542329083B38005A6ABB /* RouterTest.swift */,
 			);
 			path = TestMainModule;
 			sourceTree = "<group>";
@@ -212,6 +215,25 @@
 				15DC540F2907EC64005A6ABB /* DetailViewController.xib */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		15DC54172907F42C005A6ABB /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				15DC53D72907C18E005A6ABB /* Builder.swift */,
+			);
+			path = Builder;
+			sourceTree = "<group>";
+		};
+		15DC54182907F43B005A6ABB /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				15DC53B42907B082005A6ABB /* Main.storyboard */,
+				15DC53B72907B085005A6ABB /* Assets.xcassets */,
+				15DC53B92907B085005A6ABB /* LaunchScreen.storyboard */,
+				15DC53BC2907B085005A6ABB /* Info.plist */,
+			);
+			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -318,6 +340,7 @@
 			files = (
 				15DC54102907EC64005A6ABB /* DetailViewController.swift in Sources */,
 				15DC53C72907B347005A6ABB /* MainPresenter.swift in Sources */,
+				15DC541E2907F4E6005A6ABB /* Router.swift in Sources */,
 				15DC53B32907B082005A6ABB /* MainViewController.swift in Sources */,
 				15DC53AF2907B082005A6ABB /* AppDelegate.swift in Sources */,
 				15DC54062907E95B005A6ABB /* DetailPresenter.swift in Sources */,
@@ -333,6 +356,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				15DC53E62907C8BD005A6ABB /* MVP_patternTests.swift in Sources */,
+				15DC542429083B38005A6ABB /* RouterTest.swift in Sources */,
 				15DC53F02907C8E3005A6ABB /* MainPresentertest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -490,7 +514,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 48KB556P8Y;
-				INFOPLIST_FILE = "MVP-pattern/Info.plist";
+				INFOPLIST_FILE = "MVP-pattern/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -509,7 +533,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 48KB556P8Y;
-				INFOPLIST_FILE = "MVP-pattern/Info.plist";
+				INFOPLIST_FILE = "MVP-pattern/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
